@@ -18,3 +18,5 @@ As a result, my prompt shows:
 XXX@ZZZ:~$ cd example
 XXX@ZZZ:~/example>master$
 ```
+
+It is also easy to update: you just need to `git pull` from time to time.
