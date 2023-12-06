@@ -13,7 +13,7 @@ function get_branch {
       then
         branch="$(echo "$branch" | head -n1 | sed -e 's/.*rebasing \(.*\))$/[rebase]\1/')"
       else  # normal case
-        branch="$(git branch | awk '{print $2}')"
+        branch="$(git branch | \grep '*' | awk '{print $2}')"
       fi
       echo " $branch"
       return 0
